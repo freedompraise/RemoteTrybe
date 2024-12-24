@@ -1,26 +1,11 @@
-function processPayment() {
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-
-  if (!name || !email) {
-    alert("Please fill out all fields.");
-    return;
+document.getElementById("pay-now").addEventListener("click", function () {
+  var fullName = document.getElementById("name").value;
+  var message = `Hello, I am ${fullName}. I want to make a payment for the training.`;
+  if (fullName) {
+    var whatsappUrl =
+      "https://wa.me/2349060038374?text=" + encodeURIComponent(message);
+    window.open(whatsappUrl, "_blank");
+  } else {
+    alert("Please fill in your name.");
   }
-
-  // Paystack Payment Integration
-  const handler = PaystackPop.setup({
-    key: "your-paystack-public-key",
-    email: email,
-    amount: 25000 * 100, // Amount in kobo
-    currency: "NGN",
-    ref: `VA_${Math.floor(Math.random() * 100000)}`,
-    callback: function (response) {
-      alert("Payment successful! Transaction ref: " + response.reference);
-      window.location.href = `https://wa.me/2349060038374?text=Hello, my payment ref is ${response.reference}`;
-    },
-    onClose: function () {
-      alert("Payment window closed.");
-    },
-  });
-  handler.openIframe();
-}
+});

@@ -139,6 +139,12 @@
                     <h3 class="font-bold text-purple-800">Will there be recordings of the sessions?</h3>
                     <p>Yes, recordings of the live sessions will be available for your reference.</p>
                 </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold text-purple-800">Is a Laptop required for the program?</h3>
+                    <p>No, you can learn without a laptop, but eventually you will need one to work as a Virtual
+                        Assistant.</p>
+                </div>
+
             </div>
     </section>
 
@@ -150,8 +156,9 @@
             <p class="mb-6">We are only accepting 100 students for the January cohort. Register now to secure your
                 place!</p>
             <form id="payment-form" class="space-y-4">
-                <input type="text" placeholder="Full Name" class="input input-bordered w-full max-w-md">
-                <input type="email" placeholder="Email Address" class="input input-bordered w-full max-w-md">
+                <input type="text" placeholder="Full Name" class="input input-bordered w-full max-w-md" id="name"
+                    required>
+                <!-- <input type="email" placeholder="Email Address" class="input input-bordered w-full max-w-md" required> -->
                 <button id="pay-now" class="btn btn-primary w-full max-w-md">Pay Now</button>
             </form>
         </div>
@@ -187,7 +194,7 @@
         </div>
     </section>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
