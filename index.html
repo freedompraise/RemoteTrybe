@@ -31,13 +31,11 @@
             <h2 class="text-3xl font-bold text-center mb-8">Why Join Remote Trybe?</h2>
             <div class="grid md:grid-cols-2 text-white lg:gap-32 sm:gap-8">
                 <div
-                    class="bg-gradient-to-br from-purple-800 via-purple-900 to-gray-900 p-8 rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-900">
-
-                    <p class="font-semibold">Remote Trybe is a premium platform dedicated to equipping aspiring Virtual
-                        Assistants with
+                    class="animate-fadeInLeft bg-gradient-to-tr from-purple-800 via-purple-900 to-gray-900 p-8 rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-900 text-white">
+                    <p>Remote Trybe is a premium platform dedicated to equipping aspiring Virtual Assistants with
                         top-notch skills. Our training is designed for you to earn in dollars, build a credible career,
                         and work with flexibility from anywhere in the world.</p>
-                    <ul class="list-disc list-inside mt-4 font-serif">
+                    <ul class="list-disc list-inside mt-4">
                         <li>Comprehensive training covering essential VA skills</li>
                         <li>Support for earning in international currencies</li>
                         <li>Live interactive sessions with recordings available</li>
@@ -48,7 +46,7 @@
                         <li>Certification upon completion to boost your credibility</li>
                     </ul>
                 </div>
-                <picture>
+                <picture class="animate-fadeInRight">
                     <source srcset="images/iphone-mockup/landscape.png" media="(min-width: 768px)">
                     <img src="images/iphone-mockup/portrait.png" alt="Virtual Assistant Training Flier"
                         class="rounded-lg shadow-lg object-cover h-96 w-full md:h-[30rem] md:w-auto" lg:animate-spin>
@@ -68,7 +66,30 @@
             </h2>
             <p class="text-center mb-8 text-lg">The inspiring leader behind Remote Trybe, with proven expertise and
                 global recognition.</p>
-            <div class="grid md:grid-cols-3 gap-12 items-center">
+            <p class="sm:block lg:hidden text-center mb-4 font-mono" style="font-size: 0.8rem;">Swipe left to view
+                testimonials</p>
+
+            <div class="block sm:hidden overflow-x-auto whitespace-nowrap scrollbar-hide">
+                <div class="inline-block p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInLeft mx-2">
+                    <img src="images/screenshots/YT-proof.png" alt="YouTube Live Session"
+                        class="rounded-md object-cover w-full h-64">
+                    <p class="text-center mt-4 font-semibold">Over 1,000 viewers in a live session, sharing actionable
+                        insights for aspiring Virtual Assistants.</p>
+                </div>
+                <div class="inline-block p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInUp mx-2">
+                    <img src="images/screenshots/linkedin-proof.png" alt="LinkedIn Profile"
+                        class="rounded-md object-cover w-full h-64">
+                    <p class="text-center mt-4 font-semibold">A thriving LinkedIn presence with over 24,000 followers,
+                        showcasing influence and credibility.</p>
+                </div>
+                <div class="inline-block p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInRight mx-2">
+                    <img src="images/screenshots/tg-proof.jpeg" alt="Telegram Community"
+                        class="rounded-md object-cover object-top w-full h-64">
+                    <p class="text-center mt-4 font-semibold">A vibrant freelancing community of over 1,000 members,
+                        learning and growing together.</p>
+                </div>
+            </div>
+            <div class="hidden sm:grid md:grid-cols-3 gap-12 items-center">
                 <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInLeft">
                     <img src="images/screenshots/YT-proof.png" alt="YouTube Live Session"
                         class="rounded-md object-cover w-full h-64">
@@ -83,7 +104,7 @@
                 </div>
                 <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInRight">
                     <img src="images/screenshots/tg-proof.jpeg" alt="Telegram Community"
-                        class="rounded-md object-cover object-top w-full h-64">
+                        class="rounded-md object-cover w-full h-64">
                     <p class="text-center mt-4 font-semibold">A vibrant freelancing community of over 1,000 members,
                         learning and growing together.</p>
                 </div>
