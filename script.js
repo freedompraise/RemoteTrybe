@@ -21,3 +21,9 @@ function closeModal() {
   const modal = document.getElementById("imageModal");
   modal.classList.add("hidden");
 }
+window.addEventListener("click", function (event) {
+  const modal = document.getElementById("imageModal");
+  if (event.target === modal) {
+    closeModal();
+  }
+});
