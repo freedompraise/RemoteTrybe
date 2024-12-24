@@ -70,11 +70,13 @@
             <p class="sm:block lg:hidden text-center mb-4 font-mono" style="font-size: 0.8rem;">Swipe left to view
                 testimonials</p>
 
+            <!-- Mobile View -->
             <div class="block sm:hidden overflow-x-auto whitespace-nowrap scrollbar-hide">
                 <div class="inline-block p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInLeft mx-2">
-                    <img src="images/screenshots/YT-proof.png" alt="YouTube Live Session"
+                    <img src="images/screenshots/YT-proof.jpeg" alt="YouTube Live Session"
                         class="rounded-md object-cover w-full h-64">
-                    <p class="text-center mt-4 font-semibold">Over 1,000 viewers in a live session, sharing actionable
+                    <p class="text-center mt-4 font-semibold">Over 5,000 viewers in a live session, sharing
+                        actionable
                         insights for aspiring Virtual Assistants.</p>
                 </div>
                 <div class="inline-block p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInUp mx-2">
@@ -89,27 +91,49 @@
                     <p class="text-center mt-4 font-semibold">A vibrant freelancing community of over 1,000 members,
                         learning and growing together.</p>
                 </div>
-            </div>
-            <div class="hidden sm:grid md:grid-cols-3 gap-12 items-center">
-                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInLeft">
-                    <img src="images/screenshots/YT-proof.png" alt="YouTube Live Session"
+                <div class="inline-block p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInLeft mx-2">
+                    <img src="images/screenshots/upwork-proof.jpeg" alt="Instagram Profile"
                         class="rounded-md object-cover w-full h-64">
-                    <p class="text-center mt-4 font-semibold">Over 1,000 viewers in a live session, sharing actionable
+                    <p class="text-center mt-4 font-semibold">A top-rated freelancer on Upwork, delivering exceptional
+                        services to clients worldwide.</p>
+                </div>
+            </div>
+            <!-- Desktop View -->
+            <div class="hidden sm:grid md:grid-cols-3 gap-12 items-center">
+                <!-- Card 1 -->
+                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInLeft cursor-pointer hover:scale-105"
+                    onclick="openModal('YT-proof.jpeg')">
+                    <img src="images/screenshots/YT-proof.jpeg" alt="YouTube Live Session"
+                        class="rounded-md object-contain w-full h-64">
+                    <p class="text-center mt-4 font-semibold">Over 5,000 viewers in a live session, sharing actionable
                         insights for aspiring Virtual Assistants.</p>
                 </div>
-                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInUp">
+                <!-- Card 2 -->
+                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInUp cursor-pointer hover:scale-105"
+                    onclick="openModal('linkedin-proof.png')">
                     <img src="images/screenshots/linkedin-proof.png" alt="LinkedIn Profile"
                         class="rounded-md object-cover w-full h-64">
                     <p class="text-center mt-4 font-semibold">A thriving LinkedIn presence with over 24,000 followers,
                         showcasing influence and credibility.</p>
                 </div>
-                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInRight">
+                <!-- Card 3 -->
+                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInRight cursor-pointer hover:scale-105"
+                    onclick="openModal('tg-proof.jpeg')">
                     <img src="images/screenshots/tg-proof.jpeg" alt="Telegram Community"
                         class="rounded-md object-cover w-full h-64">
                     <p class="text-center mt-4 font-semibold">A vibrant freelancing community of over 1,000 members,
                         learning and growing together.</p>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+                <div class="relative">
+                    <img id="modalImage" src="" alt="Popup Image" class="rounded-lg max-w-full max-h-screen">
+                    <button class="absolute top-2 right-2 text-white text-4xl" onclick="closeModal()">×</button>
+                </div>
+            </div>
+
         </div>
     </section>
 

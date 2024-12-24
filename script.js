@@ -9,3 +9,15 @@ document.getElementById("pay-now").addEventListener("click", function () {
     alert("Please fill in your name.");
   }
 });
+
+function openModal(imageSrc) {
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+  modalImage.src = `images/screenshots/${imageSrc}`;
+  modal.classList.remove("hidden");
+}
+
+function closeModal() {
+  const modal = document.getElementById("imageModal");
+  modal.classList.add("hidden");
+}
