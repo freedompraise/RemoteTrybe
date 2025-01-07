@@ -28,13 +28,11 @@ window.addEventListener("click", function (event) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const menuButton = document.getElementById("menu-button");
-  const menu = document.getElementById("menu");
+// Mobile menu toggle
+const menuButton = document.getElementById("menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
 
-  menuButton.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-    menu.classList.toggle("flex");
-    menu.classList.toggle("animate-slide-in");
-  });
+// Toggle menu visibility on mobile
+menuButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
 });

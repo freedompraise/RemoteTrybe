@@ -30,22 +30,41 @@
     <section
         class="relative h-screen flex items-center justify-center bg-gradient-to-br from-purple-800 via-purple-900 to-black overflow-hidden">
         <!-- Navbar -->
-        <nav class="absolute top-0 right-0 p-4">
-            <button id="menu-button" class="text-white text-2xl md:hidden">
+        <nav class="absolute top-0 left-0 right-0 p-6 flex justify-between items-center bg-transparent text-white z-10">
+            <!-- Logo (Optional) -->
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="Remote Trybe Logo" class="w-16 h-16 rounded-full">
+            </div>
+
+            <!-- Menu Button for Mobile -->
+            <button id="menu-button" class="text-2xl md:hidden">
                 <i class="fas fa-bars"></i>
             </button>
-            <ul id="menu" class="hidden md:flex space-x-4 text-white">
-                <li><a href="#registration">Join Next Cohort</a></li>
-                <li><a href="#why-join">Why Join</a></li>
-                <li><a href="#instructor">Meet Odosa</a></li>
-                <li><a href="#success">Proven Success</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+            <!-- Navbar Links (Hidden by default on mobile, shown on larger screens) -->
+            <div id="menu" class="hidden md:flex space-x-8 font-semibold">
+                <a href="#registration" class="hover:text-pink-400 transition-colors">Join Next Cohort</a>
+                <a href="#why-join" class="hover:text-pink-400 transition-colors">Why Join</a>
+                <a href="#instructor" class="hover:text-pink-400 transition-colors">Meet Odosa</a>
+                <a href="#success" class="hover:text-pink-400 transition-colors">Proven Success</a>
+                <a href="#faq" class="hover:text-pink-400 transition-colors">FAQ</a>
+                <a href="#contact" class="hover:text-pink-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- Mobile menu for small screens (hidden by default, shown when menu is toggled) -->
+            <div id="mobile-menu"
+                class="md:hidden hidden flex flex-col items-center space-y-4 absolute top-16 left-0 right-0 bg-purple-900 p-6 z-20">
+                <a href="#registration" class="text-white hover:text-pink-400 transition-colors">Join Next Cohort</a>
+                <a href="#why-join" class="text-white hover:text-pink-400 transition-colors">Why Join</a>
+                <a href="#instructor" class="text-white hover:text-pink-400 transition-colors">Meet Odosa</a>
+                <a href="#success" class="text-white hover:text-pink-400 transition-colors">Proven Success</a>
+                <a href="#faq" class="text-white hover:text-pink-400 transition-colors">FAQ</a>
+                <a href="#contact" class="text-white hover:text-pink-400 transition-colors">Contact</a>
+            </div>
         </nav>
 
         <!-- Background Animation -->
-        <div class="absolute inset-0">
+        <div class="absolute inset-0 z-0">
             <div
                 class="w-72 h-72 bg-gradient-to-r from-pink-600 to-purple-800 rounded-full opacity-30 blur-3xl animate-pulse">
             </div>
@@ -55,10 +74,7 @@
         </div>
 
         <!-- Main Content -->
-        <div class="relative z-10 text-center max-w-3xl mx-auto px-6">
-            <!-- Logo -->
-            <img src="images/logo.png" alt="Remote Trybe Logo" class="w-24 h-24 mx-auto mb-6 rounded-full shadow-lg">
-
+        <div class="relative z-5 text-center max-w-3xl mx-auto px-6">
             <!-- Title -->
             <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white">
                 Proven Way to Earn $30,000+ in 2025 <br>
@@ -78,12 +94,13 @@
             <!-- Call to Action -->
             <div class="mt-8 flex justify-center space-x-4">
                 <a href="#registration"
-                    class="px-8 py-3 text-lg font-bold bg-pink-600 rounded-full shadow-lg hover:bg-purple-700 text-white">
+                    class="px-8 py-3 text-lg font-bold bg-pink-600 rounded-full shadow-lg hover:bg-purple-700 text-white transition-all">
                     Join Next Cohort
                 </a>
             </div>
         </div>
     </section>
+
 
 
     <!-- WhyRemoteTrybe Section -->
