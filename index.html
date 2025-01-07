@@ -11,6 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6TWT53G18"></script>
@@ -28,6 +29,21 @@
     <!-- Hero Section -->
     <section
         class="relative h-screen flex items-center justify-center bg-gradient-to-br from-purple-800 via-purple-900 to-black overflow-hidden">
+        <!-- Navbar -->
+        <nav class="absolute top-0 right-0 p-4">
+            <button id="menu-button" class="text-white text-2xl md:hidden">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-4 text-white">
+                <li><a href="#registration">Join Next Cohort</a></li>
+                <li><a href="#why-join">Why Join</a></li>
+                <li><a href="#instructor">Meet Odosa</a></li>
+                <li><a href="#success">Proven Success</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
         <!-- Background Animation -->
         <div class="absolute inset-0">
             <div
@@ -54,8 +70,6 @@
                 </span>
             </h1>
 
-
-
             <!-- Subtitle -->
             <p class="mt-4 text-lg text-gray-300">
                 Work remotely and take control of your career. Join our comprehensive 5-week training program today!
@@ -67,13 +81,13 @@
                     class="px-8 py-3 text-lg font-bold bg-pink-600 rounded-full shadow-lg hover:bg-purple-700 text-white">
                     Join Next Cohort
                 </a>
-
             </div>
         </div>
     </section>
 
+
     <!-- WhyRemoteTrybe Section -->
-    <section class="py-16 bg-gradient-to-b from-purple-800 via-purple-900 to-gray-900 text-white">
+    <section class="py-16 bg-gradient-to-b from-purple-800 via-purple-900 to-gray-900 text-white" id="why-join">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-4xl font-extrabold text-center mb-12 leading-tight">
 
@@ -139,7 +153,7 @@
     <!-- Social Proof -->
     <section
         class="py-16 bg-gradient-to-br from-purple-800 via-gray-800 to-black text-white hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-900"
-        id="social-proof">
+        id="instructor">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-4xl font-extrabold text-center mb-12 animate-fadeIn">Meet <a
                     href="https://www.odosaassisting.com/index.html#about" class="underline">Odosa</a>, Your Instructor
@@ -219,7 +233,7 @@
     </section>
 
     <!-- Upwork Offers Section -->
-    <section class="py-16 bg-gray-50 text-gray-800">
+    <section class="py-16 bg-gray-50 text-gray-800" id="success">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-4xl font-extrabold text-center mb-12 leading-tight">
                 Proven Success: <span class="text-purple-600">Odosa Egharevba’s Upwork Offers</span>
@@ -289,8 +303,8 @@
 
 
     <!-- Registration Section -->
-    <section id="registration"
-        class="bg-gradient-to-tr from-purple-800 via-purple-900 to-gray-900 p-8 rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-900 text-white">
+    <section id="registration" class="bg-gradient-to-tr from-purple-800 via-purple-900 to-gray-900 p-8 rounded-lg shadow-lg
+        hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-900 text-white">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Secure Your Spot</h2>
             <p class="mb-6">We are only accepting 100 students for the January cohort. Register now to secure your
@@ -305,7 +319,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-12 bg-gray-100">
+    <section class="py-12 bg-gray-100" id="faq">
         <div class="max-w-6xl mx-auto px-4 text-black">
             <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
             <div class="space-y-4">
@@ -341,7 +355,7 @@
 
 
     <!-- Social Media Links -->
-    <section class="py-12 bg-gray-100 text-black">
+    <section class="py-12 bg-gray-100 text-black" id="contact">
         <div class="max-w-6xl mx-auto px-4  text-center">
             <h2 class="text-3xl font-bold mb-6">Connect With Us</h2>
             <img src="images/logo.jpeg" alt="Remote Trybe Logo" class="mx-auto mb-6 w-24 h-24">
