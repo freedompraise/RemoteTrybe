@@ -12,3 +12,22 @@
 .animate-slide-in {
   animation: slide-in 0.3s ease-out;
 }
+
+.animate-infinite-slide {
+  display: flex;
+  animation: infinite-slide 20s linear infinite;
+}
+
+@keyframes infinite-slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.proof-cards {
+  display: flex;
+  gap: 2rem;
+}

@@ -33,7 +33,7 @@
         <nav class="absolute top-0 left-0 right-0 p-6 flex justify-between items-center bg-transparent text-white z-10">
             <!-- Logo (Optional) -->
             <div class="flex items-center">
-                <img src="images/logo_white.png" alt="Remote Trybe Logo" class="w-20 h-20">
+                <img src="images/logo_white.png" alt="Remote Trybe Logo" class="w-16 h-16">
             </div>
 
             <!-- Menu Button for Mobile -->
@@ -74,7 +74,7 @@
         </div>
 
         <!-- Main Content -->
-        <div class="relative z-5 text-center max-w-3xl mx-auto px-6">
+        <div class="relative z-5 text-center max-w-3xl mx-auto px-6 mt-32">
             <!-- Title -->
             <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white">
                 Proven Way to Earn $30,000+ in 2025 <br>
@@ -172,80 +172,86 @@
         class="py-16 bg-gradient-to-br from-purple-800 via-gray-800 to-black text-white hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-900"
         id="instructor">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-4xl font-extrabold text-center mb-12 animate-fadeIn">Meet <a
+            <h2 class="text-4xl font-extrabold text-center mb-12">Meet <a
                     href="https://www.odosaassisting.com/index.html#about" class="underline">Odosa</a>, Your Instructor
-            </h2>
             </h2>
             <p class="text-center mb-8 text-lg">The inspiring leader behind Remote Trybe, with proven expertise and
                 global recognition.</p>
 
-
-            <!-- Mobile View -->
-            <div class="block sm:hidden grid grid-cols-1 gap-4">
-                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInLeft">
-                    <img src="images/screenshots/YT-proof.jpeg" alt="YouTube Live Session"
-                        class="rounded-md object-cover object-bottom w-full h-64">
-                    <p class="text-center mt-4 font-semibold">Over 5,000 viewers in a live session, sharing actionable
-                        insights for aspiring Virtual Assistants.</p>
-                </div>
-                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInUp">
-                    <img src="images/screenshots/linkedin-proof.png" alt="LinkedIn Profile"
-                        class="rounded-md object-cover w-full h-64">
-                    <p class="text-center mt-4 font-semibold">A thriving LinkedIn presence with over 24,000 followers,
-                        showcasing influence and credibility.</p>
-                </div>
-                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInRight">
-                    <img src="images/screenshots/tg-proof.jpeg" alt="Telegram Community"
-                        class="rounded-md object-cover object-top w-full h-64">
-                    <p class="text-center mt-4 font-semibold">A vibrant freelancing community of over 1,000 members,
-                        learning and growing together.</p>
-                </div>
-                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInLeft">
-                    <img src="images/screenshots/upwork-proof.jpeg" alt="Instagram Profile"
-                        class="rounded-md object-cover object-bottom w-full h-64">
-                    <p class="text-center mt-4 font-semibold">A top-rated freelancer on Upwork, delivering exceptional
-                        services to clients worldwide.</p>
+            <!-- Sliding Proof Section -->
+            <div class="relative overflow-hidden">
+                <div class="flex gap-8 animate-infinite-slide">
+                    <!-- Duplicate the proof cards to create a seamless loop -->
+                    <div class="proof-cards">
+                        <!-- Card 1 -->
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/YT-proof.jpeg" alt="YouTube Live Session"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">Over 5,000 viewers in a live session, sharing
+                                actionable insights for aspiring Virtual Assistants.</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/linkedin-proof.png" alt="LinkedIn Profile"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A thriving LinkedIn presence with over 24,000
+                                followers, showcasing influence and credibility.</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/tg-proof.jpeg" alt="Telegram Community"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A vibrant freelancing community of over 1,000
+                                members,
+                                learning and growing together.</p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/upwork-proof.jpeg" alt="Upwork Profile"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A top-rated freelancer on Upwork, delivering
+                                exceptional services to clients worldwide.</p>
+                        </div>
+                    </div>
+                    <!-- Duplicate the proof cards again for seamless scrolling -->
+                    <div class="proof-cards">
+                        <!-- Same cards repeated -->
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/YT-proof.jpeg" alt="YouTube Live Session"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">Over 5,000 viewers in a live session, sharing
+                                actionable insights for aspiring Virtual Assistants.</p>
+                        </div>
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/linkedin-proof.png" alt="LinkedIn Profile"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A thriving LinkedIn presence with over 24,000
+                                followers, showcasing influence and credibility.</p>
+                        </div>
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/tg-proof.jpeg" alt="Telegram Community"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A vibrant freelancing community of over 1,000
+                                members,
+                                learning and growing together.</p>
+                        </div>
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/upwork-proof.jpeg" alt="Upwork Profile"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A top-rated freelancer on Upwork, delivering
+                                exceptional services to clients worldwide.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Desktop View -->
-            <div class="hidden sm:grid md:grid-cols-3 gap-12 items-center">
-                <!-- Card 1 -->
-                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInLeft cursor-pointer hover:scale-105"
-                    onclick="openModal('YT-proof.jpeg')">
-                    <img src="images/screenshots/YT-proof.jpeg" alt="YouTube Live Session"
-                        class="rounded-md object-contain w-full h-64">
-                    <p class="text-center mt-4 font-semibold">Over 5,000 viewers in a live session, sharing
-                        actionable
-                        insights for aspiring Virtual Assistants.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInUp cursor-pointer hover:scale-105"
-                    onclick="openModal('linkedin-proof.png')">
-                    <img src="images/screenshots/linkedin-proof.png" alt="LinkedIn Profile"
-                        class="rounded-md object-cover w-full h-64">
-                    <p class="text-center mt-4 font-semibold">A thriving LinkedIn presence with over 24,000
-                        followers,
-                        showcasing influence and credibility.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="p-4 bg-white rounded-lg shadow-lg text-gray-800 animate-fadeInRight cursor-pointer hover:scale-105"
-                    onclick="openModal('tg-proof.jpeg')">
-                    <img src="images/screenshots/tg-proof.jpeg" alt="Telegram Community"
-                        class="rounded-md object-cover w-full h-64">
-                    <p class="text-center mt-4 font-semibold">A vibrant freelancing community of over 1,000 members,
-                        learning and growing together.</p>
-                </div>
-            </div>
-
-            <!-- Modal -->
-            <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
-                <div class="relative">
-                    <img id="modalImage" src="" alt="Popup Image" class="rounded-lg max-w-full max-h-screen">
-                    <button class="absolute top-2 right-2 text-white text-4xl" onclick="closeModal()">×</button>
-                </div>
-            </div>
-
         </div>
     </section>
 
