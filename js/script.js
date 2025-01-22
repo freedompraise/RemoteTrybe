@@ -12,24 +12,6 @@ document.getElementById("pay-now").addEventListener("click", function () {
   }
 });
 
-function openModal(imageSrc) {
-  const modal = document.getElementById("imageModal");
-  const modalImage = document.getElementById("modalImage");
-  modalImage.src = `images/screenshots/${imageSrc}`;
-  modal.classList.remove("hidden");
-}
-
-function closeModal() {
-  const modal = document.getElementById("imageModal");
-  modal.classList.add("hidden");
-}
-window.addEventListener("click", function (event) {
-  const modal = document.getElementById("imageModal");
-  if (event.target === modal) {
-    closeModal();
-  }
-});
-
 // Mobile menu toggle
 const menuButton = document.getElementById("menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
@@ -40,26 +22,29 @@ menuButton.addEventListener("click", () => {
 });
 
 // SLIDING
-const modal = document.getElementById("modal");
-const modalContent = document.getElementById("modal-content");
-const closeModal = document.getElementById("close-modal");
+// Select the container with the infinite scroll animation
+const slidingContainer = document.querySelector(".animate-infinite-slide");
 
-const slidingSections = document.querySelectorAll(".sliding-section");
+// Set a flag to track if the animation is paused
+let isPaused = false;
+let resumeTimeout;
 
-// Modal logic
-closeModal.addEventListener("click", () => {
-  modal.classList.add("hidden");
-  document.body.classList.remove("modal-open");
-});
-
-modal.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.classList.add("hidden");
-    document.body.classList.remove("modal-open");
+// Function to pause the animation
+const pauseAnimation = () => {
+  if (!isPaused) {
+    slidingContainer.style.animationPlayState = "paused"; // Pause the animation
+    isPaused = true;
+    clearTimeout(resumeTimeout); // Clear any existing resume timer
+    // Resume the animation after 5 seconds
+    resumeTimeout = setTimeout(() => {
+      slidingContainer.style.animationPlayState = "running";
+      isPaused = false;
+    }, 5000);
   }
-});
+};
 
-// Animate sliding sections
-slidingSections.forEach((section) => {
-  section.style.animationPlayState = "running";
+// Attach a click event listener to all the testimonial cards
+const testimonialCards = document.querySelectorAll(".testimonial-cards > div");
+testimonialCards.forEach((card) => {
+  card.addEventListener("click", pauseAnimation);
 });
