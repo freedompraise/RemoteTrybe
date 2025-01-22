@@ -10,7 +10,7 @@
     <link rel="icon" href="images/logo.jpeg" type="image/jpeg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
@@ -28,7 +28,8 @@
 <body class="bg-gradient-to-br from-purple-800 via-purple-900 to-black text-white font-sans">
     <!-- Hero Section -->
     <section
-        class="relative h-screen flex items-center justify-center bg-gradient-to-br from-purple-800 via-purple-900 to-black overflow-hidden">
+        class="relative h-screen flex items-center justify-center bg-gradient-to-br from-purple-800 via-purple-900 to-black overflow-hidden"
+        id="hero">
         <!-- Navbar -->
         <nav class="absolute top-0 left-0 right-0 p-6 flex justify-between items-center bg-transparent text-white z-10">
             <!-- Logo (Optional) -->
@@ -102,14 +103,21 @@
     </section>
 
     <!-- WhyRemoteTrybe Section -->
-    <section class="py-16 bg-gradient-to-b from-purple-800 via-purple-900 to-gray-900 text-white" id="why-join">
+    <section class="py-16 bg-gradient-to-b from-white via-purple-900 to-gray-900 text-white" id="why-join">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl font-extrabold text-center mb-12 leading-tight">
+            <!-- Scrolling Headline -->
+            <!-- <div class="relative overflow-hidden mb-12 bg-purple-800 ">
+                <div class="absolute w-full h-16 rounded-lg shadow-md flex items-center">
+                    <div class="scrolling-headline flex gap-16 whitespace-nowrap px-6 text-lg font-bold text-center">
+                        <span>JOIN to cashout BIG in 2025 with <span
+                                class="text-purple-200 animate-pulse">RemoteTrybe</span></span>
+                        <span>Learn. Earn. Succeed with RemoteTrybe!</span>
+                        <span>Your Gateway to Remote Success!</span>
+                        <span>Upgrade Your Skills with RemoteTrybe in 2025!</span>
+                    </div>
+                </div>
+            </div> -->
 
-                JOIN to cashout BIG in 2025 with
-
-                <span class="text-purple-200 animate-pulse">RemoteTrybe</span>
-            </h2>
             <div class="grid md:grid-cols-2 items-center gap-16">
                 <!-- Content Section -->
                 <div class="bg-purple-800/80 p-8 rounded-xl shadow-xl transition-transform transform hover:scale-105">
@@ -353,12 +361,13 @@ hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-
             <h2 class="text-3xl font-bold mb-6">Join the Waitlist</h2>
             <p class="mb-6">The January cohort is full. Register now to join the waitlist for the February/March cohort!
             </p>
-            <!-- <form id="waitlist-form" class="space-y-4">
-        <input type="text" placeholder="Full Name" class="input input-bordered w-full max-w-md" id="name" required>
-        <button id="join-waitlist" class="btn btn-primary w-full max-w-md">Join Waitlist</button>
-    </form> -->
-            <p class="mt-4">Join the waitlist on WhatsApp: <a href="https://chat.whatsapp.com/JaioelyLk3JJCiWBzPVqtO"
-                    class="underline text-blue-400">Join Now</a></p>
+            <form id="waitlist-form" class="space-y-4">
+                <input type="text" placeholder="Full Name" class="input input-bordered w-full max-w-md" id="name"
+                    required>
+                <button id="join-waitlist" class="btn btn-primary w-full max-w-md">Join Waitlist</button>
+            </form>
+            <!-- <p class="mt-4">Join the waitlist on WhatsApp: <a href="https://chat.whatsapp.com/JaioelyLk3JJCiWBzPVqtO"
+                    class="underline text-blue-400">Join Now</a></p> -->
         </div>
     </section>
 
@@ -401,7 +410,6 @@ hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-
             </div>
         </div>
     </section>
-
 
     <!-- Testimonials Section -->
     <section class="py-16 bg-gray-50 text-gray-800" id="testimonials">
@@ -467,8 +475,6 @@ hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-
         </div>
     </section>
 
-
-
     <!-- Social Media Links -->
     <section class="py-12 bg-gray-100 text-black" id="contact">
         <div class="max-w-6xl mx-auto px-4  text-center">
@@ -499,7 +505,7 @@ hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

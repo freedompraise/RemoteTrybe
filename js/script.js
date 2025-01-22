@@ -36,3 +36,28 @@ const mobileMenu = document.getElementById("mobile-menu");
 menuButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
+
+// SLIDING
+const modal = document.getElementById("modal");
+const modalContent = document.getElementById("modal-content");
+const closeModal = document.getElementById("close-modal");
+
+const slidingSections = document.querySelectorAll(".sliding-section");
+
+// Modal logic
+closeModal.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  document.body.classList.remove("modal-open");
+});
+
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.classList.add("hidden");
+    document.body.classList.remove("modal-open");
+  }
+});
+
+// Animate sliding sections
+slidingSections.forEach((section) => {
+  section.style.animationPlayState = "running";
+});
