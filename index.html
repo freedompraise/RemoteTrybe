@@ -359,12 +359,11 @@
 hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-900 text-white">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Register Now</h2>
-            <p class="mb-6">Register now for the February/March cohort!
+            <p class="mb-6">Get trained by our expert virtual assistant coach!
             </p>
-            <form id="waitlist-form" class="space-y-4">
-                <input type="text" placeholder="Full Name" class="input input-bordered w-full max-w-md" id="name"
-                    required>
-                <button id="join-waitlist" class="btn btn-primary w-full max-w-md">Register Now</button>
+            <form id="waitlist-form" class="space-y-4" onsubmit="return sendWhatsApp()">
+                <input type="text" placeholder="Full Name" class="input input-bordered w-full max-w-md" id="name" required>
+                <button type="submit" id="join-waitlist" class="btn btn-primary w-full max-w-md">Register Now</button>
             </form>
             <!-- <p class="mt-4">Join the waitlist on WhatsApp: <a href="https://chat.whatsapp.com/JaioelyLk3JJCiWBzPVqtO"
                     class="underline text-blue-400">Join Now</a></p> -->
@@ -504,7 +503,19 @@ hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-
             </div>
         </div>
     </section>
-
+    <script>
+        function sendWhatsApp() {
+            var name = document.getElementById('name').value;
+            if (name.trim() === "") {
+                alert("Please enter your name.");
+                return false; // Prevent form submission if name is empty
+            }
+            var message = encodeURIComponent(`Hello ma, my name is ${name}. I want to register for the next cohort.`);
+            var whatsappUrl = `http://wa.me/2349060038374?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+            return false; // Prevent form submission
+        }
+    </script>
     <script src="js/script.js"></script>
 </body>
 
