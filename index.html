@@ -45,25 +45,28 @@
             </button>
 
             <!-- Navbar Links (Hidden by default on mobile, shown on larger screens) -->
-            <div id="menu" class="hidden md:flex space-x-6 lg:space-x-8 font-semibold">
-                <a href="#registration" class="hover:text-pink-400 transition-colors">Join Next Cohort</a>
-                <a href="#why-join" class="hover:text-pink-400 transition-colors">Why Join</a>
-                <a href="#instructor" class="hover:text-pink-400 transition-colors">Meet Odosa</a>
-                <a href="#success" class="hover:text-pink-400 transition-colors">Proven Success</a>
-                <a href="#faq" class="hover:text-pink-400 transition-colors">FAQ</a>
-                <a href="#contact" class="hover:text-pink-400 transition-colors">Contact</a>
-            </div>
+            <div id="menu" class="hidden md:flex space-x-8 font-semibold">
+                <a href="http://wa.me/2349060038374" class="hover:text-pink-400 transition-colors">Join Next Cohort</a>
+                <div id="menu" class="hidden md:flex space-x-6 lg:space-x-8 font-semibold">
+                    <a href="#registration" class="hover:text-pink-400 transition-colors">Join Next Cohort</a>
+                    <a href="#why-join" class="hover:text-pink-400 transition-colors">Why Join</a>
+                    <a href="#instructor" class="hover:text-pink-400 transition-colors">Meet Odosa</a>
+                    <a href="#success" class="hover:text-pink-400 transition-colors">Proven Success</a>
+                    <a href="#faq" class="hover:text-pink-400 transition-colors">FAQ</a>
+                    <a href="#contact" class="hover:text-pink-400 transition-colors">Contact</a>
+                </div>
 
-            <!-- Mobile menu for small screens (hidden by default, shown when menu is toggled) -->
-            <div id="mobile-menu"
-                class="md:hidden hidden flex flex-col items-center space-y-4 absolute top-16 left-0 right-0 bg-purple-900/95 backdrop-blur-sm p-6 z-20">
-                <a href="#registration" class="text-white hover:text-pink-400 transition-colors">Join Next Cohort</a>
-                <a href="#why-join" class="text-white hover:text-pink-400 transition-colors">Why Join</a>
-                <a href="#instructor" class="text-white hover:text-pink-400 transition-colors">Meet Odosa</a>
-                <a href="#success" class="text-white hover:text-pink-400 transition-colors">Proven Success</a>
-                <a href="#faq" class="text-white hover:text-pink-400 transition-colors">FAQ</a>
-                <a href="#contact" class="text-white hover:text-pink-400 transition-colors">Contact</a>
-            </div>
+                <!-- Mobile menu for small screens (hidden by default, shown when menu is toggled) -->
+                <div id="mobile-menu"
+                    class="md:hidden hidden flex flex-col items-center space-y-4 absolute top-16 left-0 right-0 bg-purple-900 p-6 z-20">
+                    <a href="#registration" class="text-white hover:text-pink-400 transition-colors">Join Next
+                        Cohort</a>
+                    <a href="#why-join" class="text-white hover:text-pink-400 transition-colors">Why Join</a>
+                    <a href="#instructor" class="text-white hover:text-pink-400 transition-colors">Meet Odosa</a>
+                    <a href="#success" class="text-white hover:text-pink-400 transition-colors">Proven Success</a>
+                    <a href="#faq" class="text-white hover:text-pink-400 transition-colors">FAQ</a>
+                    <a href="#contact" class="text-white hover:text-pink-400 transition-colors">Contact</a>
+                </div>
         </nav>
 
         <!-- Main Content -->
@@ -92,32 +95,13 @@
                 </p>
 
                 <!-- Call to Action -->
-                <div class="mt-8 flex space-x-4">
+                <div class="mt-8 flex justify-center space-x-4">
                     <a href="#registration"
-                        class="px-6 py-2 md:px-8 md:py-3 text-base md:text-lg font-bold bg-pink-600 rounded-full shadow-lg hover:bg-purple-700 hover:scale-105 text-white transition-all transform">
+                        class="px-8 py-3 text-lg font-bold bg-pink-600 rounded-full shadow-lg hover:bg-purple-700 text-white transition-all">
                         Join Next Cohort
                     </a>
                 </div>
             </div>
-
-            <!-- Right Section: Visual Element -->
-            <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end mt-8 md:mt-0">
-                <!-- Placeholder for an illustration or image -->
-                <img src="images/hero-cover.webp" alt="Remote Work Illustration"
-                    class="w-72 h-72 md:w-96 md:h-96 rounded-lg shadow-2xl hover:scale-105 transition-transform object-cover">
-            </div>
-        </div>
-
-        <!-- Background Animation -->
-        <div class="absolute inset-0 z-0">
-            <!-- Animated gradient circles -->
-            <div
-                class="w-48 h-48 md:w-72 md:h-72 bg-gradient-to-r from-pink-600 to-purple-800 rounded-full opacity-30 blur-3xl animate-float">
-            </div>
-            <div
-                class="w-64 h-64 md:w-96 md:h-96 bg-gradient-to-r from-purple-500 to-purple-900 rounded-full opacity-40 blur-2xl absolute top-10 right-10 animate-float-reverse">
-            </div>
-        </div>
     </section>
     <!-- WhyRemoteTrybe Section -->
     <section class="py-16 bg-gradient-to-bl from-purple-800 via-purple-600 to-gray-500 text-white" id="why-join">
@@ -376,12 +360,12 @@
 hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-900 text-white">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Register Now</h2>
-            <p class="mb-6">Register now for the February/March cohort!
+            <p class="mb-6">Get trained by our expert virtual assistant coach!
             </p>
-            <form id="waitlist-form" class="space-y-4">
+            <form id="waitlist-form" class="space-y-4" onsubmit="return sendWhatsApp()">
                 <input type="text" placeholder="Full Name" class="input input-bordered w-full max-w-md" id="name"
                     required>
-                <button id="join-waitlist" class="btn btn-primary w-full max-w-md">Register Now</button>
+                <button type="submit" id="join-waitlist" class="btn btn-primary w-full max-w-md">Register Now</button>
             </form>
             <!-- <p class="mt-4">Join the waitlist on WhatsApp: <a href="https://chat.whatsapp.com/JaioelyLk3JJCiWBzPVqtO"
                     class="underline text-blue-400">Join Now</a></p> -->
@@ -521,7 +505,19 @@ hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-
             </div>
         </div>
     </section>
-
+    <script>
+        function sendWhatsApp() {
+            var name = document.getElementById('name').value;
+            if (name.trim() === "") {
+                alert("Please enter your name.");
+                return false; // Prevent form submission if name is empty
+            }
+            var message = encodeURIComponent(`Hello ma, my name is ${name}. I want to register for the next cohort.`);
+            var whatsappUrl = `http://wa.me/2349060038374?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+            return false; // Prevent form submission
+        }
+    </script>
     <script src="js/script.js"></script>
 </body>
 
