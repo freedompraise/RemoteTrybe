@@ -28,22 +28,24 @@
 <body class="bg-gradient-to-br from-purple-800 via-purple-900 to-black text-white font-sans">
     <!-- Hero Section -->
     <section
-        class="relative h-screen flex items-center justify-center bg-gradient-to-br from-purple-800 via-purple-900 to-black overflow-hidden"
+        class="relative h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-purple-900 via-purple-800 to-black overflow-hidden"
         id="hero">
         <!-- Navbar -->
-        <nav class="absolute top-0 left-0 right-0 p-6 flex justify-between items-center bg-transparent text-white z-10">
-            <!-- Logo (Optional) -->
+        <nav
+            class="absolute top-0 left-0 right-0 p-4 md:p-6 flex justify-between items-center bg-transparent text-white z-10">
+            <!-- Logo -->
             <div class="flex items-center">
-                <img src="images/logo_white.png" alt="Remote Trybe Logo" class="w-16 h-16">
+                <img src="images/logo_white.png" alt="Remote Trybe Logo"
+                    class="w-12 h-12 md:w-16 md:h-16 hover:scale-105 transition-transform">
             </div>
 
             <!-- Menu Button for Mobile -->
-            <button id="menu-button" class="text-2xl md:hidden">
+            <button id="menu-button" class="text-2xl md:hidden hover:text-pink-400 transition-colors">
                 <i class="fas fa-bars"></i>
             </button>
 
             <!-- Navbar Links (Hidden by default on mobile, shown on larger screens) -->
-            <div id="menu" class="hidden md:flex space-x-8 font-semibold">
+            <div id="menu" class="hidden md:flex space-x-6 lg:space-x-8 font-semibold">
                 <a href="#registration" class="hover:text-pink-400 transition-colors">Join Next Cohort</a>
                 <a href="#why-join" class="hover:text-pink-400 transition-colors">Why Join</a>
                 <a href="#instructor" class="hover:text-pink-400 transition-colors">Meet Odosa</a>
@@ -54,7 +56,7 @@
 
             <!-- Mobile menu for small screens (hidden by default, shown when menu is toggled) -->
             <div id="mobile-menu"
-                class="md:hidden hidden flex flex-col items-center space-y-4 absolute top-16 left-0 right-0 bg-purple-900 p-6 z-20">
+                class="md:hidden hidden flex flex-col items-center space-y-4 absolute top-16 left-0 right-0 bg-purple-900/95 backdrop-blur-sm p-6 z-20">
                 <a href="#registration" class="text-white hover:text-pink-400 transition-colors">Join Next Cohort</a>
                 <a href="#why-join" class="text-white hover:text-pink-400 transition-colors">Why Join</a>
                 <a href="#instructor" class="text-white hover:text-pink-400 transition-colors">Meet Odosa</a>
@@ -64,46 +66,61 @@
             </div>
         </nav>
 
-        <!-- Background Animation -->
-        <div class="absolute inset-0 z-0">
-            <div
-                class="w-72 h-72 bg-gradient-to-r from-pink-600 to-purple-800 rounded-full opacity-30 blur-3xl animate-pulse">
+        <!-- Main Content -->
+        <div
+            class="relative z-5 container mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center justify-between h-full md:gap-8">
+            <!-- Left Section: Text Content -->
+            <div class="text-left w-full md:w-1/2 space-y-6 mt-24 md:mt-0">
+                <!-- Title -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+                    Your Dream Job Awaits
+                    <span
+                        class="block text-3xl md:text-4xl lg:text-5xl font-semibold bg-gradient-to-br from-pink-100 to-purple-300 bg-clip-text text-transparent mt-2">
+                        Become a Virtual Assistant with
+                    </span>
+                    <span
+                        class="block text-3xl md:text-4xl lg:text-5xl font-semibold bg-gradient-to-br from-pink-100 to-purple-300 bg-clip-text text-transparent mt-2">
+                        Remote Trybe
+                    </span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="mt-6 text-lg md:text-xl text-gray-300 relative">
+                    Work remotely and take control of your career. Join our comprehensive 5-week training program today!
+                    <span
+                        class="absolute bottom-0 left-0 w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-600 mt-2"></span>
+                </p>
+
+                <!-- Call to Action -->
+                <div class="mt-8 flex space-x-4">
+                    <a href="#registration"
+                        class="px-6 py-2 md:px-8 md:py-3 text-base md:text-lg font-bold bg-pink-600 rounded-full shadow-lg hover:bg-purple-700 hover:scale-105 text-white transition-all transform">
+                        Join Next Cohort
+                    </a>
+                </div>
             </div>
-            <div
-                class="w-96 h-96 bg-gradient-to-r from-purple-500 to-purple-900 rounded-full opacity-40 blur-2xl absolute top-10 right-10">
+
+            <!-- Right Section: Visual Element -->
+            <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end mt-8 md:mt-0">
+                <!-- Placeholder for an illustration or image -->
+                <img src="images/hero-cover.webp" alt="Remote Work Illustration"
+                    class="w-72 h-72 md:w-96 md:h-96 rounded-lg shadow-2xl hover:scale-105 transition-transform object-cover">
             </div>
         </div>
 
-        <!-- Main Content -->
-        <div class="relative z-5 text-center max-w-3xl mx-auto px-6 mt-32">
-            <!-- Title -->
-            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white">
-                Your Dream Job Awaits <br>
-                <span class="bg-gradient-to-br text-4xl from-pink-100 to-purple-800 bg-clip-text leading-tight">
-                    Become a Virtual Assistant with
-                    <strong class="animate-pulse text-purple-200 inline">
-                        RemoteTrybe!
-                    </strong>
-                </span>
-            </h1>
-
-            <!-- Subtitle -->
-            <p class="mt-4 text-lg text-gray-300">
-                Work remotely and take control of your career. Join our comprehensive 5-week training program today!
-            </p>
-
-            <!-- Call to Action -->
-            <div class="mt-8 flex justify-center space-x-4">
-                <a href="#registration"
-                    class="px-8 py-3 text-lg font-bold bg-pink-600 rounded-full shadow-lg hover:bg-purple-700 text-white transition-all">
-                    Join Next Cohort
-                </a>
+        <!-- Background Animation -->
+        <div class="absolute inset-0 z-0">
+            <!-- Animated gradient circles -->
+            <div
+                class="w-48 h-48 md:w-72 md:h-72 bg-gradient-to-r from-pink-600 to-purple-800 rounded-full opacity-30 blur-3xl animate-float">
+            </div>
+            <div
+                class="w-64 h-64 md:w-96 md:h-96 bg-gradient-to-r from-purple-500 to-purple-900 rounded-full opacity-40 blur-2xl absolute top-10 right-10 animate-float-reverse">
             </div>
         </div>
     </section>
-
     <!-- WhyRemoteTrybe Section -->
-    <section class="py-16 bg-gradient-to-tl from-purple-800 via-purple-600 to-gray-200 text-white" id="why-join">
+    <section class="py-16 bg-gradient-to-bl from-purple-800 via-purple-600 to-gray-500 text-white" id="why-join">
         <div class="max-w-7xl mx-auto px-6">
             <!-- Scrolling Headline -->
             <!-- <div class="relative overflow-hidden mb-12 bg-purple-800 ">
