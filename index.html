@@ -45,28 +45,26 @@
             </button>
 
             <!-- Navbar Links (Hidden by default on mobile, shown on larger screens) -->
-            <div id="menu" class="hidden md:flex space-x-8 font-semibold">
-                <a href="http://wa.me/2349060038374" class="hover:text-pink-400 transition-colors">Join Next Cohort</a>
-                <div id="menu" class="hidden md:flex space-x-6 lg:space-x-8 font-semibold">
-                    <a href="#registration" class="hover:text-pink-400 transition-colors">Join Next Cohort</a>
-                    <a href="#why-join" class="hover:text-pink-400 transition-colors">Why Join</a>
-                    <a href="#instructor" class="hover:text-pink-400 transition-colors">Meet Odosa</a>
-                    <a href="#success" class="hover:text-pink-400 transition-colors">Proven Success</a>
-                    <a href="#faq" class="hover:text-pink-400 transition-colors">FAQ</a>
-                    <a href="#contact" class="hover:text-pink-400 transition-colors">Contact</a>
-                </div>
+            <div id="menu" class="hidden md:flex space-x-6 lg:space-x-8 font-semibold">
+                <a href="#registration" class="hover:text-pink-400 transition-colors">Join Next Cohort</a>
+                <a href="#why-join" class="hover:text-pink-400 transition-colors">Why Join</a>
+                <a href="#instructor" class="hover:text-pink-400 transition-colors">Meet Odosa</a>
+                <a href="#success" class="hover:text-pink-400 transition-colors">Proven Success</a>
+                <a href="#faq" class="hover:text-pink-400 transition-colors">FAQ</a>
+                <a href="#contact" class="hover:text-pink-400 transition-colors">Contact</a>
+            </div>
 
-                <!-- Mobile menu for small screens (hidden by default, shown when menu is toggled) -->
-                <div id="mobile-menu"
-                    class="md:hidden hidden flex flex-col items-center space-y-4 absolute top-16 left-0 right-0 bg-purple-900 p-6 z-20">
-                    <a href="#registration" class="text-white hover:text-pink-400 transition-colors">Join Next
-                        Cohort</a>
-                    <a href="#why-join" class="text-white hover:text-pink-400 transition-colors">Why Join</a>
-                    <a href="#instructor" class="text-white hover:text-pink-400 transition-colors">Meet Odosa</a>
-                    <a href="#success" class="text-white hover:text-pink-400 transition-colors">Proven Success</a>
-                    <a href="#faq" class="text-white hover:text-pink-400 transition-colors">FAQ</a>
-                    <a href="#contact" class="text-white hover:text-pink-400 transition-colors">Contact</a>
-                </div>
+            <!-- Mobile menu for small screens (hidden by default, shown when menu is toggled) -->
+            <div id="mobile-menu"
+                class="md:hidden hidden flex flex-col items-center space-y-4 absolute top-16 left-0 right-0 bg-purple-900/95 backdrop-blur-sm p-6 z-20">
+                <a href="#registration" class="text-white hover:text-pink-400 transition-colors">Join Next
+                    Cohort</a>
+                <a href="#why-join" class="text-white hover:text-pink-400 transition-colors">Why Join</a>
+                <a href="#instructor" class="text-white hover:text-pink-400 transition-colors">Meet Odosa</a>
+                <a href="#success" class="text-white hover:text-pink-400 transition-colors">Proven Success</a>
+                <a href="#faq" class="text-white hover:text-pink-400 transition-colors">FAQ</a>
+                <a href="#contact" class="text-white hover:text-pink-400 transition-colors">Contact</a>
+            </div>
         </nav>
 
         <!-- Main Content -->
@@ -75,7 +73,7 @@
             <!-- Left Section: Text Content -->
             <div class="text-left w-full md:w-1/2 space-y-6 mt-24 md:mt-0">
                 <!-- Title -->
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
                     Your Dream Job Awaits
                     <span
                         class="block text-3xl md:text-4xl lg:text-5xl font-semibold bg-gradient-to-br from-pink-100 to-purple-300 bg-clip-text text-transparent mt-2">
@@ -89,19 +87,39 @@
 
                 <!-- Subtitle -->
                 <p class="mt-6 text-lg md:text-xl text-gray-300 relative">
-                    Work remotely and take control of your career. Join our comprehensive 5-week training program today!
+                    Work remotely and take control of your career. Join our comprehensive 5-week training program
+                    today!
                     <span
                         class="absolute bottom-0 left-0 w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-600 mt-2"></span>
                 </p>
 
                 <!-- Call to Action -->
-                <div class="mt-8 flex justify-center space-x-4">
-                    <a href="#registration"
+                <div class="mt-8">
+                    <a href="http://wa.me/2349060038374"
                         class="px-8 py-3 text-lg font-bold bg-pink-600 rounded-full shadow-lg hover:bg-purple-700 text-white transition-all">
                         Join Next Cohort
                     </a>
                 </div>
             </div>
+
+            <!-- Right Section: Visual Element -->
+            <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end mt-8 md:mt-0">
+                <!-- Placeholder for an illustration or image -->
+                <img src="images/hero-cover.webp" alt="Remote Work Illustration"
+                    class="w-72 h-72 md:w-96 md:h-96 rounded-lg shadow-2xl hover:scale-105 transition-transform object-cover">
+            </div>
+        </div>
+
+        <!-- Background Animation -->
+        <div class="absolute inset-0 z-0">
+            <!-- Animated gradient circles -->
+            <div
+                class="w-48 h-48 md:w-72 md:h-72 bg-gradient-to-r from-pink-600 to-purple-800 rounded-full opacity-30 blur-3xl animate-float">
+            </div>
+            <div
+                class="w-64 h-64 md:w-96 md:h-96 bg-gradient-to-r from-purple-500 to-purple-900 rounded-full opacity-40 blur-2xl absolute top-10 right-10 animate-float-reverse">
+            </div>
+        </div>
     </section>
     <!-- WhyRemoteTrybe Section -->
     <section class="py-16 bg-gradient-to-bl from-purple-800 via-purple-600 to-gray-500 text-white" id="why-join">
@@ -124,7 +142,523 @@
                 <div class="bg-purple-800/80 p-8 rounded-xl shadow-xl transition-transform transform hover:scale-105">
                     <h3 class="text-2xl font-bold mb-4">Why Join Remote Trybe?</h3>
                     <p class="mb-6 text-lg leading-relaxed">
-                        Remote Trybe is your gateway to a rewarding career as a Virtual Assistant. Learn premium skills,
+                        Remote Trybe is your gateway to a rewarding career as a Virtual Assistant. Learn premium
+                        skills,
+                        work flexibly from anywhere, and start earning in dollars with confidence.
+                    </p>
+                    <ul class="space-y-3 text-base leading-6">
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-400 text-xl">&#10003;</span>
+                            Comprehensive training covering essential VA skills.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-400 text-xl">&#10003;</span>
+                            Support for earning in international currencies.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-400 text-xl">&#10003;</span>
+                            Live, interactive sessions with lifetime access to recordings.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-400 text-xl">&#10003;</span>
+                            Small class sizes for personalized mentorship.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-400 text-xl">&#10003;</span>
+                            Community support and guidance from industry experts.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-400 text-xl">&#10003;</span>
+                            Expert career resources to build your portfolio and land high-paying clients.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-400 text-xl">&#10003;</span>
+                            Certification to showcase your expertise and boost credibility.
+                        </li>
+                    </ul>
+                    <a href="#registration"
+                        class="inline-block mt-8 bg-purple-500 hover:bg-purple-600 text-white py-3 px-6 rounded-lg text-lg font-bold transition-all shadow-md hover:shadow-xl">
+                        Get Started Today!
+                    </a>
+                </div>
+
+                <!-- Image Section -->
+                <picture>
+                    <source srcset="images/iphone-mockup/landscape.png" media="(min-width: 768px)" />
+                    <img src="images/iphone-mockup/portrait.png" alt="Virtual Assistant Training Flier"
+                        class="rounded-lg shadow-xl object-cover h-96 w-full md:h-[30rem] md:w-auto lg:-rotate-90 transition-transform hover:scale-105" />
+                </picture>
+            </div>
+        </div>
+    </section>
+    <!-- Social Proof -->
+    <section
+        class="py-16 bg-gradient-to-br from-purple-800 via-gray-800 to-black text-white hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-900"
+        id="instructor">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center mb-12">Meet <a
+                    href="https://www.odosaassisting.com/index.html#about" class="underline">Odosa</a>, Your
+                Instructor
+            </h2>
+            <p class="text-center mb-8 text-lg">The inspiring leader behind Remote Trybe, with proven expertise and
+                global recognition.</p>
+
+            <!-- Sliding Proof Section -->
+            <div class="relative overflow-hidden">
+                <div class="flex gap-8 animate-infinite-slide">
+                    <!-- Duplicate the proof cards to create a seamless loop -->
+                    <div class="proof-cards">
+                        <!-- Card 1 -->
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/YT-proof.jpeg" alt="YouTube Live Session"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">Over 5,000 viewers in a live session, sharing
+                                actionable insights for aspiring Virtual Assistants.</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/linkedin-proof.png" alt="LinkedIn Profile"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A thriving LinkedIn presence with over 24,000
+                                followers, showcasing influence and credibility.</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/tg-proof.jpeg" alt="Telegram Community"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A vibrant freelancing community of over 1,000
+                                members,
+                                learning and growing together.</p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/upwork-proof.jpeg" alt="Upwork Profile"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A top-rated freelancer on Upwork, delivering
+                                exceptional services to clients worldwide.</p>
+                        </div>
+                    </div>
+                    <!-- Duplicate the proof cards again for seamless scrolling -->
+                    <div class="proof-cards">
+                        <!-- Same cards repeated -->
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/YT-proof.jpeg" alt="YouTube Live Session"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">Over 5,000 viewers in a live session, sharing
+                                actionable insights for aspiring Virtual Assistants.</p>
+                        </div>
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/linkedin-proof.png" alt="LinkedIn Profile"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A thriving LinkedIn presence with over 24,000
+                                followers, showcasing influence and credibility.</p>
+                        </div>
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/tg-proof.jpeg" alt="Telegram Community"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A vibrant freelancing community of over 1,000
+                                members,
+                                learning and growing together.</p>
+                        </div>
+                        <div
+                            class="p-4 bg-white rounded-lg shadow-lg text-gray-800 flex-shrink-0 w-80 cursor-pointer hover:scale-105">
+                            <img src="images/screenshots/upwork-proof.jpeg" alt="Upwork Profile"
+                                class="rounded-md object-cover w-full h-64">
+                            <p class="text-center mt-4 font-semibold">A top-rated freelancer on Upwork, delivering
+                                exceptional services to clients worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Upwork Offers Section -->
+    <section class="py-16 bg-gray-50 text-gray-800" id="success">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-center mb-12 leading-tight">
+                Proven Success: <span class="text-purple-600">Odosa Egharevba’s Upwork Offers</span>
+            </h2>
+            <p class="text-lg text-center mb-10 text-gray-600">
+                Odosa Egharevba’s exceptional expertise has attracted numerous high-profile offers on Upwork.
+                Here’s a glimpse of her stellar track record in the virtual assistant industry.
+            </p>
+
+            <!-- Sliding Offers Section -->
+            <div class="relative overflow-hidden">
+                <div class="flex gap-8 animate-infinite-slide">
+                    <!-- Duplicate the offer cards to create a seamless loop -->
+                    <div class="offer-cards flex">
+                        <!-- Offer Screenshot Cards -->
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-1.PNG" alt="Upwork Offer 1"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-2.PNG" alt="Upwork Offer 2"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-3.PNG" alt="Upwork Offer 3"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-4.PNG" alt="Upwork Offer 4"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-5.PNG" alt="Upwork Offer 5"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-6.PNG" alt="Upwork Offer 6"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-7.PNG" alt="Upwork Offer 7"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-8.JPG" alt="Upwork Offer 8"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-9.PNG" alt="Upwork Offer 9"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-10.PNG" alt="Upwork Offer 10"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-11.PNG" alt="Upwork Offer 11"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-12.PNG" alt="Upwork Offer 12"
+                                class="rounded-lg object-cover">
+                        </div>
+                    </div>
+                    <!-- Duplicate the cards again for seamless scrolling -->
+                    <div class="offer-cards flex">
+                        <!-- Same cards repeated -->
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/offer-1.PNG" alt="Upwork Offer 1"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <!-- Repeat all cards... -->
+                        <!-- ... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="bg-gradient-to-tr from-purple-800 via-purple-900 text-2xl to-gray-900 p-8 rounded-lg shadow-lg
+hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Register Now</h2>
+            <p class="mb-6">Register now for the February/March cohort!
+            </p>
+            <form id="waitlist-form" class="space-y-4">
+                <input type="text" placeholder="Full Name" class="input input-bordered w-full max-w-md" id="name"
+                    required>
+                <button id="join-waitlist" class="btn btn-primary w-full max-w-md">Register Now</button>
+            </form>
+            <!-- <p class="mt-4">Join the waitlist on WhatsApp: <a href="https://chat.whatsapp.com/JaioelyLk3JJCiWBzPVqtO"
+                    class="underline text-blue-400">Join Now</a></p> -->
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-12 bg-gray-100" id="faq">
+        <div class="max-w-6xl mx-auto px-4 text-black">
+            <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold text-purple-800">What is the duration of the program?</h3>
+                    <p>The training lasts 4-5 weeks, with classes held Fridays to Sundays.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold text-purple-800">What is the cost of the program?</h3>
+                    <p>The program fee is ₦25,000 or $25.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold text-purple-800">How do I confirm my registration?</h3>
+                    <p>Pay the program fee, upload your receipt, and receive your confirmation code upon
+                        verification.
+                    </p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold text-purple-800">Will I receive a certificate?</h3>
+                    <p>Yes, you will receive a certificate upon completion of the program.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold text-purple-800">Will there be recordings of the sessions?</h3>
+                    <p>Yes, recordings of the live sessions will be available for your reference.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold text-purple-800">Is a Laptop required for the program?</h3>
+                    <p>No, you can learn without a laptop, but eventually you will need one to work as a Virtual
+                        Assistant.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold text-purple-800">Does the program provide jobs?</h3>
+                    <p>No, we are a training program and do not provide jobs. Our goal is to equip you with the
+                        skills
+                        needed to succeed as a Virtual Assistant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50 text-gray-800" id="testimonials">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-center mb-12 leading-tight">
+                What Clients Say: <span class="text-purple-600">Testimonials from Upwork</span>
+            </h2>
+            <p class="text-lg text-center mb-10 text-gray-600">
+                Odosa Egharevba's clients rave about her professionalism, expertise, and ability to deliver
+                outstanding results. See what they have to say about working with her.
+            </p>
+
+            <!-- Sliding Testimonials-->
+            <div class="relative overflow-hidden">
+                <div class="flex gap-8 animate-infinite-slide">
+                    <!-- Duplicate testimonial cards for seamless scrolling -->
+                    <div class="testimonial-cards flex">
+                        <!-- Testimonial Cards -->
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/testimonial-1.jpeg" alt="Testimonial 1"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/testimonial-2.jpeg" alt="Testimonial 2"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/testimonial-3.jpeg" alt="Testimonial 3"
+                                class="rounded-lg object-cover">
+                        </div>
+
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/testimonial-5.jpeg" alt="Testimonial 5"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/testimonial-6.jpeg" alt="Testimonial 6"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/testimonial-7.jpeg" alt="Testimonial 7"
+                                class="rounded-lg object-cover">
+                        </div>
+                    </div>
+                    <!-- Duplicate testimonials for infinite scrolling -->
+                    <div class="testimonial-cards flex">
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-lg flex-shrink-0 w-80 hover:scale-105 transition-transform">
+                            <img src="images/screenshots/testimonial-1.jpeg" alt="Testimonial 1"
+                                class="rounded-lg object-cover">
+                        </div>
+                        <!-- Repeat all cards... -->
+                        <!-- ... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Links -->
+    <section class="py-12 bg-gray-100 text-black" id="contact">
+        <div class="max-w-6xl mx-auto px-4  text-center">
+            <h2 class="text-3xl font-bold mb-6">Connect With Us</h2>
+            <img src="images/logo.jpeg" alt="Remote Trybe Logo" class="mx-auto mb-6 w-24 h-24">
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.instagram.com/remotetrybe/profilecard/?igsh=ZnVzN2hsODM0azV2" target="_blank"
+                    class="text-pink-800 hover:text-pink-900">
+                    <i class="fab text-black fa-instagram text-4xl"></i>
+                </a>
+                <a href="https://youtube.com/@odosaegharevba?si=VDtG8lyAyi_s0LU1" target="_blank"
+                    class="text-red-600 hover:text-red-800">
+                    <i class="fab fa-youtube text-4xl"></i>
+                </a>
+                <a href="https://www.facebook.com/share/4gveirsAVUdwrGHT/?mibextid=LQQJ4d" target="_blank"
+                    class="text-blue-800 hover:text-blue-900">
+                    <i class="fab fa-facebook text-4xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/remote-trybe/" target="_blank"
+                    class="text-blue-600 hover:text-blue-800">
+                    <i class="fab fa-linkedin text-4xl"></i>
+                </a>
+                <a href="https://www.tiktok.com/@remotetrybe?_t=8rwqyr7ohyh&_r=1" target="_blank"
+                    class="text-black hover:text-gray-800">
+                    <i class="fab fa-tiktok text-4xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Trybe | Virtual Assistant Training</title>
+    <meta name="description"
+        content="Learn Virtual Assistant skills, earn in dollars, and work remotely with our comprehensive training program!">
+    <link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6TWT53G18"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D6TWT53G18');
+    </script>
+
+</head>
+
+<body class="bg-gradient-to-br from-purple-800 via-purple-900 to-black text-white font-sans">
+    <!-- Hero Section -->
+    <section
+        class="relative h-screen flex items-center justify-center bg-gradient-to-br from-purple-800 via-purple-900 to-black overflow-hidden"
+        id="hero">
+        <!-- Navbar -->
+        <nav class="absolute top-0 left-0 right-0 p-6 flex justify-between items-center bg-transparent text-white z-10">
+            <!-- Logo (Optional) -->
+            <div class="flex items-center">
+                <img src="images/logo_white.png" alt="Remote Trybe Logo" class="w-16 h-16">
+            </div>
+
+            <!-- Menu Button for Mobile -->
+            <button id="menu-button" class="text-2xl md:hidden">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar Links (Hidden by default on mobile, shown on larger screens) -->
+            <div id="menu" class="hidden md:flex space-x-8 font-semibold">
+                <a href="http://wa.me/2349060038374" class="hover:text-pink-400 transition-colors">Join Next
+                    Cohort</a>
+                <a href="#why-join" class="hover:text-pink-400 transition-colors">Why Join</a>
+                <a href="#instructor" class="hover:text-pink-400 transition-colors">Meet Odosa</a>
+                <a href="#success" class="hover:text-pink-400 transition-colors">Proven Success</a>
+                <a href="#faq" class="hover:text-pink-400 transition-colors">FAQ</a>
+                <a href="#contact" class="hover:text-pink-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- Mobile menu for small screens (hidden by default, shown when menu is toggled) -->
+            <div id="mobile-menu"
+                class="md:hidden hidden flex flex-col items-center space-y-4 absolute top-16 left-0 right-0 bg-purple-900 p-6 z-20">
+                <a href="http://wa.me/2349060038374" class="text-white hover:text-pink-400 transition-colors">Join
+                    Next Cohort</a>
+                <a href="#why-join" class="text-white hover:text-pink-400 transition-colors">Why Join</a>
+                <a href="#instructor" class="text-white hover:text-pink-400 transition-colors">Meet Odosa</a>
+                <a href="#success" class="text-white hover:text-pink-400 transition-colors">Proven Success</a>
+                <a href="#faq" class="text-white hover:text-pink-400 transition-colors">FAQ</a>
+                <a href="#contact" class="text-white hover:text-pink-400 transition-colors">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Background Animation -->
+        <div class="absolute inset-0 z-0">
+            <div
+                class="w-72 h-72 bg-gradient-to-r from-pink-600 to-purple-800 rounded-full opacity-30 blur-3xl animate-pulse">
+            </div>
+            <div
+                class="w-96 h-96 bg-gradient-to-r from-purple-500 to-purple-900 rounded-full opacity-40 blur-2xl absolute top-10 right-10">
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="relative z-5 text-center max-w-3xl mx-auto px-6 mt-32">
+            <!-- Title -->
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white">
+                Your Dream Job Awaits <br>
+                <span class="bg-gradient-to-br text-4xl from-pink-100 to-purple-800 bg-clip-text leading-tight">
+                    Become a Virtual Assistant with
+                    <strong class="animate-pulse text-purple-200 inline">
+                        RemoteTrybe!
+                    </strong>
+                </span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="mt-4 text-lg text-gray-300">
+                Work remotely and take control of your career. Join our comprehensive 5-week training program today!
+            </p>
+
+            <!-- Call to Action -->
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="http://wa.me/2349060038374"
+                    class="px-8 py-3 text-lg font-bold bg-pink-600 rounded-full shadow-lg hover:bg-purple-700 text-white transition-all">
+                    Join Next Cohort
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhyRemoteTrybe Section -->
+    <section class="py-16 bg-gradient-to-tl from-purple-800 via-purple-600 to-gray-200 text-white" id="why-join">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Scrolling Headline -->
+            <!-- <div class="relative overflow-hidden mb-12 bg-purple-800 ">
+                <div class="absolute w-full h-16 rounded-lg shadow-md flex items-center">
+                    <div class="scrolling-headline flex gap-16 whitespace-nowrap px-6 text-lg font-bold text-center">
+                        <span>JOIN to cashout BIG in 2025 with <span
+                                class="text-purple-200 animate-pulse">RemoteTrybe</span></span>
+                        <span>Learn. Earn. Succeed with RemoteTrybe!</span>
+                        <span>Your Gateway to Remote Success!</span>
+                        <span>Upgrade Your Skills with RemoteTrybe in 2025!</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="grid md:grid-cols-2 items-center gap-16">
+                <!-- Content Section -->
+                <div class="bg-purple-800/80 p-8 rounded-xl shadow-xl transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-4">Why Join Remote Trybe?</h3>
+                    <p class="mb-6 text-lg leading-relaxed">
+                        Remote Trybe is your gateway to a rewarding career as a Virtual Assistant. Learn premium
+                        skills,
                         work flexibly from anywhere, and start earning in dollars with confidence.
                     </p>
                     <ul class="space-y-3 text-base leading-6">
@@ -179,7 +713,8 @@
         id="instructor">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-4xl font-extrabold text-center mb-12">Meet <a
-                    href="https://www.odosaassisting.com/index.html#about" class="underline">Odosa</a>, Your Instructor
+                    href="https://www.odosaassisting.com/index.html#about" class="underline">Odosa</a>, Your
+                Instructor
             </h2>
             <p class="text-center mb-8 text-lg">The inspiring leader behind Remote Trybe, with proven expertise and
                 global recognition.</p>
@@ -365,7 +900,8 @@ hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-
             <form id="waitlist-form" class="space-y-4" onsubmit="return sendWhatsApp()">
                 <input type="text" placeholder="Full Name" class="input input-bordered w-full max-w-md" id="name"
                     required>
-                <button type="submit" id="join-waitlist" class="btn btn-primary w-full max-w-md">Register Now</button>
+                <button type="submit" id="join-waitlist" class="btn btn-primary w-full max-w-md">Register
+                    Now</button>
             </form>
             <!-- <p class="mt-4">Join the waitlist on WhatsApp: <a href="https://chat.whatsapp.com/JaioelyLk3JJCiWBzPVqtO"
                     class="underline text-blue-400">Join Now</a></p> -->
@@ -387,7 +923,8 @@ hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-
                 </div>
                 <div class="bg-white p-4 rounded shadow">
                     <h3 class="font-bold text-purple-800">How do I confirm my registration?</h3>
-                    <p>Pay the program fee, upload your receipt, and receive your confirmation code upon verification.
+                    <p>Pay the program fee, upload your receipt, and receive your confirmation code upon
+                        verification.
                     </p>
                 </div>
                 <div class="bg-white p-4 rounded shadow">
@@ -405,7 +942,8 @@ hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-
                 </div>
                 <div class="bg-white p-4 rounded shadow">
                     <h3 class="font-bold text-purple-800">Does the program provide jobs?</h3>
-                    <p>No, we are a training program and do not provide jobs. Our goal is to equip you with the skills
+                    <p>No, we are a training program and do not provide jobs. Our goal is to equip you with the
+                        skills
                         needed to succeed as a Virtual Assistant.</p>
                 </div>
             </div>
@@ -520,5 +1058,7 @@ hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-800 hover:to-gray-
     </script>
     <script src="js/script.js"></script>
 </body>
+
+>>>>>>> 0575c45c457ec4fc765c3baa49cb18ab8338e98d
 
 </html>
