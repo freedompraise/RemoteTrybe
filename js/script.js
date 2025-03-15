@@ -1,11 +1,8 @@
-document.getElementById("pay-now").addEventListener("click", function () {
-  var fullName = document.getElementById("name").value;
-  var message = `Hello, I am ${fullName}. I want to join 
-  the next cohort of the VA training.
-  `;
+document.getElementById("join-waitlist").addEventListener("click", function () {
+  var fullName = document.getElementById("name").value.trim();
   if (fullName) {
-    var whatsappUrl =
-      "https://wa.me/2349060038374?text=" + encodeURIComponent(message);
+    var message = `Hello, I am ${fullName}. I want to join the next cohort of the VA training.`;
+    var whatsappUrl = "https://chat.whatsapp.com/JaioelyLk3JJCiWBzPVqtO";
     window.open(whatsappUrl, "_blank");
   } else {
     alert("Please fill in your name.");
