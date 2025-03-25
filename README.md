@@ -1,1 +1,1 @@
-# RemoteTrybe
+# RemoteTrybe - Virtual Assitant Training Program
