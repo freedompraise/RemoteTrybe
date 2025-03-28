@@ -18,8 +18,7 @@ menuButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
-// SLIDING
-// Select the container with the infinite scroll animation
+/// Select the container with the infinite scroll animation
 const slidingContainer = document.querySelector(".animate-infinite-slide");
 
 // Set a flag to track if the animation is paused
@@ -29,10 +28,9 @@ let resumeTimeout;
 // Function to pause the animation
 const pauseAnimation = () => {
   if (!isPaused) {
-    slidingContainer.style.animationPlayState = "paused"; // Pause the animation
+    slidingContainer.style.animationPlayState = "paused";
     isPaused = true;
-    clearTimeout(resumeTimeout); // Clear any existing resume timer
-    // Resume the animation after 5 seconds
+    clearTimeout(resumeTimeout);
     resumeTimeout = setTimeout(() => {
       slidingContainer.style.animationPlayState = "running";
       isPaused = false;
@@ -40,8 +38,8 @@ const pauseAnimation = () => {
   }
 };
 
-// Attach a click event listener to all the testimonial cards
-const testimonialCards = document.querySelectorAll(".testimonial-cards > div");
-testimonialCards.forEach((card) => {
-  card.addEventListener("click", pauseAnimation);
+// Attach a click event listener to all images within the sliding container
+const slidingImages = document.querySelectorAll(".animate-infinite-slide img");
+slidingImages.forEach((img) => {
+  img.addEventListener("click", pauseAnimation);
 });
