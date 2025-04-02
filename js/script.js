@@ -1,13 +1,4 @@
-document.getElementById("join-waitlist").addEventListener("click", function () {
-  var fullName = document.getElementById("name").value.trim();
-  if (fullName) {
-    var message = `Hello, I am ${fullName}. I want to join the next cohort of the VA training.`;
-    var whatsappUrl = "https://chat.whatsapp.com/JaioelyLk3JJCiWBzPVqtO";
-    window.open(whatsappUrl, "_blank");
-  } else {
-    alert("Please fill in your name.");
-  }
-});
+
 
 // Mobile menu toggle
 const menuButton = document.getElementById("menu-button");
@@ -16,6 +7,23 @@ const mobileMenu = document.getElementById("mobile-menu");
 // Toggle menu visibility on mobile
 menuButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
+});
+
+//close menu when outside or on a link is clicked
+document.addEventListener("click", (event) => {
+  const isMenuButton = menuButton.contains(event.target);
+  const isMobileMenu = mobileMenu.contains(event.target);
+
+  if (!isMenuButton && !isMobileMenu) {
+    mobileMenu.classList.add("hidden");
+  }
+});
+
+// close menu on scroll
+window.addEventListener("scroll", () => {
+  if (!mobileMenu.classList.contains("hidden")) {
+    mobileMenu.classList.add("hidden");
+  }
 });
 
 /// Select the container with the infinite scroll animation
