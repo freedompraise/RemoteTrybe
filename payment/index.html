@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemoteTrybe Virtual Assistant Training 2025</title>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
+        <h1 class="text-2xl font-bold mb-6 text-center">RemoteTrybe Virtual Assistant Training 2025</h1>
+        
+        <form class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium mb-1">First Name</label>
+                <input type="text" id="first-name" required
+                    class="w-full p-2 border rounded-md">
+            </div>
+            
+            <div>
+                <label class="block text-sm font-medium mb-1">Last Name</label>
+                <input type="text" id="last-name" required
+                    class="w-full p-2 border rounded-md">
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium mb-1">Email (Gmail only)</label>
+                <input type="email" id="email" required 
+                    pattern="[a-zA-Z0-9._%+-]+@gmail\.com$"
+                    class="w-full p-2 border rounded-md">
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium mb-1">Phone</label>
+                <input type="tel" id="phone" required
+                    class="w-full p-2 border rounded-md">
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium mb-1">Amount (₦)</label>
+                <input type="number" id="amount" value="32000" readonly
+                    class="w-full p-2 border rounded-md bg-gray-100">
+            </div>
+
+            <button type="button" id="pay-button"
+                class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition">
+                Pay ₦32,000 Now
+            </button>
+        </form>
+    </div>
+</body>
+</html>
