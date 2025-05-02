@@ -14,3 +14,27 @@
     transform: translateX(-50%);
   }
 }
+
+
+/* loader */
+#skeleton-loader {
+  position: fixed;
+  inset: 0;
+  background: #1f1f29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+.pulse-box {
+  width: 80%;
+  max-width: 800px;
+  height: 60vh;
+  background: #2a2a37;
+  border-radius: 1rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .4; }
+}

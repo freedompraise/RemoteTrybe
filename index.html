@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remote Trybe | Virtual Assistant Training</title>
-    <meta name="description" content="Learn Virtual Assistant skills, earn in dollars, and work remotely with our comprehensive training program!">
-    <link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <title>Remote Trybe | Virtual Assistant Training</title>
+  <meta name="description" content="Learn Virtual Assistant skills, earn in dollars, and work remotely with our comprehensive training program!">
+  <link rel="icon" href="images/logo.jpeg" type="image/jpeg">
 
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preload" as="image" href="images/hero-cover.jpeg">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preload" as="image" href="images/hero-cover.jpeg">
 
-    <script async src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css">
-    </noscript>
+  <script async src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css"></noscript>
 
-    <script defer src="https://kit.fontawesome.com/50e0af0f47.js" crossorigin="anonymous"></script>
+  <script defer src="https://kit.fontawesome.com/50e0af0f47.js" crossorigin="anonymous"></script>
+  <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-D6TWT53G18"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D6TWT53G18', { 'anonymize_ip': true });
+  </script>
 
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-D6TWT53G18"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-D6TWT53G18', { 'anonymize_ip': true });
-    </script>
+  <link href="css/style.css" rel="stylesheet">
 
-    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="bg-gradient-to-br from-purple-800 via-purple-900 to-black text-white font-sans">
-    <nav class="absolute top-0 left-0 right-0 p-4 md:p-6 flex justify-between items-center bg-transparent text-white z-10">
-        <div class="flex items-center">
-            <img src="images/logo_white.png" alt="Remote Trybe Logo" class="w-12 h-12 md:w-16 md:h-16 transition-transform hover:scale-105">
-        </div>
-        <button id="menu-button" class="text-2xl md:hidden transition-colors hover:text-pink-400 z-30">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div id="menu" class="hidden md:flex space-x-6 lg:space-x-8 font-semibold">
-            <a href="#registration" class="transition-colors hover:text-pink-400">Join Next Cohort</a>
-            <a href="#why-join" class="transition-colors hover:text-pink-400">Why Join</a>
-            <a href="#instructor" class="transition-colors hover:text-pink-400">Meet Odosa</a>
-            <a href="#success" class="transition-colors hover:text-pink-400">Proven Success</a>
-            <a href="#faq" class="transition-colors hover:text-pink-400">FAQ</a>
-            <a href="#contact" class="transition-colors hover:text-pink-400">Contact</a>
-        </div>
-        <div id="mobile-menu" class="md:hidden hidden flex-col items-center space-y-4 absolute top-16 left-0 right-0 bg-purple-900/95 backdrop-blur-sm p-6 z-20">
-            <a href="#registration" class="hover:text-pink-400">Join Next Cohort</a>
-            <a href="#why-join" class="hover:text-pink-400">Why Join</a>
-            <a href="#instructor" class="hover:text-pink-400">Meet Odosa</a>
-            <a href="#success" class="hover:text-pink-400">Proven Success</a>
-            <a href="#faq" class="hover:text-pink-400">FAQ</a>
-            <a href="#contact" class="hover:text-pink-400">Contact</a>
-        </div>
-    </nav>
+  <div id="skeleton-loader">
+    <div class="pulse-box"></div>
+  </div>
 
-    <section id="hero" class="relative h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-purple-900 via-purple-800 to-black overflow-hidden">
-        <div class="container mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center justify-between h-full mt-8 z-10 md:gap-8">
-            <div class="w-full md:w-1/2 space-y-6 text-center sm:text-left mt-16 md:mt-0">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                    Your Dream Job Awaits
-                    <span class="block text-3xl md:text-4xl lg:text-5xl font-semibold bg-gradient-to-br from-pink-100 to-purple-300 bg-clip-text text-transparent mt-2">
-                        Become a Virtual Assistant with
-                    </span>
-                    <span class="block text-3xl md:text-4xl lg:text-5xl font-semibold bg-gradient-to-br from-pink-100 to-purple-300 bg-clip-text text-transparent mt-2">
-                        Remote Trybe
-                    </span>
-                </h1>
-                <p class="mt-6 text-lg md:text-xl text-gray-300 relative">
-                    Work remotely and take control of your career. Join our comprehensive 6-week training program today!
-                    <span class="absolute bottom-0 left-0 w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-600 mt-2"></span>
-                </p>
-                <a href="https://selar.com/remotetrybe" class="mt-8 inline-block px-8 py-3 font-bold text-lg bg-pink-600 rounded-full shadow-lg hover:bg-purple-700">Join Next Cohort</a>
-            </div>
-            <div class="w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0">
-                <img src="images/hero-cover.jpeg" alt="Remote Work Illustration" class="w-72 h-72 md:w-96 md:h-96 object-cover rounded-lg shadow-2xl transition-transform hover:scale-105">
-            </div>
-        </div>
-        <div class="absolute inset-0 z-0">
-            <div class="absolute w-48 h-48 md:w-72 md:h-72 bg-gradient-to-r from-pink-600 to-purple-800 opacity-30 blur-3xl rounded-full animate-float"></div>
-            <div class="absolute w-64 h-64 md:w-96 md:h-96 top-10 right-10 bg-gradient-to-r from-purple-500 to-purple-900 opacity-40 blur-2xl rounded-full animate-float-reverse"></div>
-        </div>
-    </section>
+  <nav class="absolute top-0 left-0 right-0 p-4 md:p-6 flex justify-between items-center bg-transparent text-white z-10">
+    <div class="flex items-center">
+      <img src="images/logo_white.png" alt="Remote Trybe Logo" class="w-12 h-12 md:w-16 md:h-16 transition-transform hover:scale-105">
+    </div>
+    <button id="menu-button" class="text-2xl md:hidden transition-colors hover:text-pink-400 z-30">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div id="menu" class="hidden md:flex space-x-6 lg:space-x-8 font-semibold">
+      <a href="#registration" class="transition-colors hover:text-pink-400">Join Next Cohort</a>
+      <a href="#why-join" class="transition-colors hover:text-pink-400">Why Join</a>
+      <a href="#instructor" class="transition-colors hover:text-pink-400">Meet Odosa</a>
+      <a href="#success" class="transition-colors hover:text-pink-400">Proven Success</a>
+      <a href="#faq" class="transition-colors hover:text-pink-400">FAQ</a>
+      <a href="#contact" class="transition-colors hover:text-pink-400">Contact</a>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex-col items-center space-y-4 absolute top-16 left-0 right-0 bg-purple-900/95 backdrop-blur-sm p-6 z-20">
+      <a href="#registration" class="hover:text-pink-400">Join Next Cohort</a>
+      <a href="#why-join" class="hover:text-pink-400">Why Join</a>
+      <a href="#instructor" class="hover:text-pink-400">Meet Odosa</a>
+      <a href="#success" class="hover:text-pink-400">Proven Success</a>
+      <a href="#faq" class="hover:text-pink-400">FAQ</a>
+      <a href="#contact" class="hover:text-pink-400">Contact</a>
+    </div>
+  </nav>
+
+  <section id="hero" class="relative h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-purple-900 via-purple-800 to-black overflow-hidden">
+    <div class="container mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center justify-between h-full mt-8 z-10 md:gap-8">
+      <div class="w-full md:w-1/2 space-y-6 text-center sm:text-left mt-16 md:mt-0">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          Your Dream Job Awaits
+          <span class="block text-3xl md:text-4xl lg:text-5xl font-semibold bg-gradient-to-br from-pink-100 to-purple-300 bg-clip-text text-transparent mt-2">
+            Become a Virtual Assistant with
+          </span>
+          <span class="block text-3xl md:text-4xl lg:text-5xl font-semibold bg-gradient-to-br from-pink-100 to-purple-300 bg-clip-text text-transparent mt-2">
+            Remote Trybe
+          </span>
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-gray-300 relative">
+          Work remotely and take control of your career. Join our comprehensive 6-week training program today!
+          <span class="absolute bottom-0 left-0 w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-600 mt-2"></span>
+        </p>
+        <a href="https://selar.com/remotetrybe" class="mt-8 inline-block px-8 py-3 font-bold text-lg bg-pink-600 rounded-full shadow-lg hover:bg-purple-700">Join Next Cohort</a>
+      </div>
+      <div class="w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0">
+        <img src="images/hero-cover.jpeg" alt="Remote Work Illustration" class="w-72 h-72 md:w-96 md:h-96 object-cover rounded-lg shadow-2xl transition-transform hover:scale-105">
+      </div>
+    </div>
+    <div class="absolute inset-0 z-0">
+      <div class="absolute w-48 h-48 md:w-72 md:h-72 bg-gradient-to-r from-pink-600 to-purple-800 opacity-30 blur-3xl rounded-full animate-float"></div>
+      <div class="absolute w-64 h-64 md:w-96 md:h-96 top-10 right-10 bg-gradient-to-r from-purple-500 to-purple-900 opacity-40 blur-2xl rounded-full animate-float-reverse"></div>
+    </div>
+  </section>
 
 
     <section class="py-16 bg-gradient-to-bl from-purple-800 via-purple-600 to-gray-500 text-white" id="why-join">
@@ -280,5 +282,11 @@
       </section>
       
     <script src="js/script.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+          document.getElementById('skeleton-loader').style.display = 'none';
+        });
+      </script>
+    
 </body>
 </html>
