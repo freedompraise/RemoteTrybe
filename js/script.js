@@ -27,27 +27,22 @@ window.addEventListener("scroll", () => {
 });
 
 /// Select the container with the infinite scroll animation
-const slidingContainer = document.querySelector(".animate-infinite-slide");
-
-// Set a flag to track if the animation is paused
+const track = document.querySelector('.slider-track');
 let isPaused = false;
-let resumeTimeout;
+let resume;
 
-// Function to pause the animation
-const pauseAnimation = () => {
+const pause = () => {
   if (!isPaused) {
-    slidingContainer.style.animationPlayState = "paused";
+    track.style.animationPlayState = 'paused';
     isPaused = true;
-    clearTimeout(resumeTimeout);
-    resumeTimeout = setTimeout(() => {
-      slidingContainer.style.animationPlayState = "running";
+    clearTimeout(resume);
+    resume = setTimeout(() => {
+      track.style.animationPlayState = 'running';
       isPaused = false;
     }, 5000);
   }
 };
 
-// Attach a click event listener to all images within the sliding container
-const slidingImages = document.querySelectorAll(".animate-infinite-slide img");
-slidingImages.forEach((img) => {
-  img.addEventListener("click", pauseAnimation);
+document.querySelectorAll('.slider-track img').forEach(img => {
+  img.addEventListener('click', pause);
 });
