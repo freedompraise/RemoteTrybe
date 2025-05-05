@@ -46,3 +46,71 @@ const pause = () => {
 document.querySelectorAll('.slider-track img').forEach(img => {
   img.addEventListener('click', pause);
 });
+
+
+// testimonials.js
+
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('testimonial-modal');
+  const modalImg = document.getElementById('modal-image');
+  const testimonials = Array.from(document.querySelectorAll('.testimonial-card'));
+  let currentIndex = 0;
+
+  // Open modal and set current index
+  function openTestimonial(imgSrc, index) {
+    currentIndex = index;
+    modalImg.src = imgSrc;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.classList.add('overflow-hidden');
+    document.addEventListener('keydown', handleKeyDown);
+  }
+
+  function closeTestimonial() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.classList.remove('overflow-hidden');
+    document.removeEventListener('keydown', handleKeyDown);
+  }
+
+  function navigateTestimonial(direction) {
+    currentIndex = (currentIndex + direction + testimonials.length) % testimonials.length;
+    const newImgSrc = testimonials[currentIndex].querySelector('img').src;
+    modalImg.src = newImgSrc;
+  }
+
+  function handleKeyDown(event) {
+    switch(event.key) {
+      case 'Escape':
+        closeTestimonial();
+        break;
+      case 'ArrowLeft':
+        navigateTestimonial(-1);
+        break;
+      case 'ArrowRight':
+        navigateTestimonial(1);
+        break;
+    }
+  }
+
+  // Add click events to all testimonial cards
+  testimonials.forEach((card, index) => {
+    card.addEventListener('click', function() {
+      const imgSrc = this.querySelector('img').src;
+      openTestimonial(imgSrc, index);
+    });
+  });
+
+  // Close when clicking outside image
+  modal.addEventListener('click', function(e) {
+    if (e.target === this) closeTestimonial();
+  });
+
+  // Navigation arrows (add these to your HTML)
+  document.getElementById('modal-prev').addEventListener('click', () => navigateTestimonial(-1));
+  document.getElementById('modal-next').addEventListener('click', () => navigateTestimonial(1));
+
+  // Make functions available globally if needed
+  window.openTestimonial = openTestimonial;
+  window.closeTestimonial = closeTestimonial;
+});
