@@ -15,6 +15,19 @@
   }
 }
 
+/* testimonials.css */
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+#testimonial-modal {
+  backdrop-filter: blur(10px);
+}
+
 
 /* loader */
 #skeleton-loader {
